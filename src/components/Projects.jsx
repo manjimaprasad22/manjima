@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import trip from '../assets/images/tripsman.png'
 import ayush from '../assets/images/ayush.png'
 import zq from '../assets/images/zq.png'
@@ -10,9 +10,11 @@ import t4 from '../assets/images/t4.jpeg'
 import t5 from '../assets/images/t5.jpeg'
 import '../assets/style.css'
 import { ReactComponent as More } from '../assets/images/more.svg';
-import Pageflip from './Pageflip'
 import HTMLFlipBook from 'react-pageflip'
+
 const Projects = () => {
+ 
+  
   const Page = React.forwardRef((props, ref) => {
     return (
       <div className="demoPage" ref={ref}>
@@ -23,7 +25,7 @@ const Projects = () => {
       </div>
     );
   });
-  const wid= "500"
+  
   return (
     <div >
       <div className='row content-3'>
@@ -40,7 +42,7 @@ const Projects = () => {
           </div>
           {/* <button className='btn' data-toggle="modal" data-target="#exampleModal">More images<More style={{height:'20px', width:'20px', color:'blue'}}/></button> */}
         </div>
-        <HTMLFlipBook width={wid} height={300}>
+        <HTMLFlipBook width={500} height={300} className='d-none d-lg-block'>
           <div><img src={trip} alt="" style={{ width: "100%", height: '100%' }} /></div>
           <div >
             <div className='moreimages'>More images
@@ -56,7 +58,7 @@ const Projects = () => {
 
 
         </HTMLFlipBook>
-
+        <img src={trip} alt="Zimple-Q" className='img-fluid project-image d-lg-none' />
 
       </div>
       <div className='container mt-4'>

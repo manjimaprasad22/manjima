@@ -17,7 +17,7 @@ const Home = () => {
 <>
       <NavBarComp/>
 <div className='container'>
-    <Element name='About'>
+    <Element name='About' className='aboutback'>
 
       <Bannerabout/>
     </Element>

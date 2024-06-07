@@ -3,8 +3,9 @@ import Home from "./views/Home";
 
 
 function App() {
+  
   return (
-    <div >
+    <div > 
       <Routes>
       <Route path='/' element={<Home />} />
       </Routes>
