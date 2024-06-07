@@ -8,7 +8,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a delay for the loader (e.g., fetching data)
+
     setTimeout(() => {
       setLoading(false);
     }, 2500);

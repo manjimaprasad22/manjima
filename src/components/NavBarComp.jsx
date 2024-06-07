@@ -2,7 +2,6 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../assets/style.css'
 import { Link, Element } from 'react-scroll';
 import logo from '../assets/images/icon.png'
@@ -59,12 +58,7 @@ const NavBarComp = () => {
               <button className='btn' onClick={handlegit}> <i className="fab fa-github"></i> Github</button>
             </Nav>
           </Nav>
-          {/* <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
-          </Nav> */}
+          
         </Navbar.Collapse>
       </Container>
     </Navbar> 
