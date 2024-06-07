@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../assets/style.css'
 import { Link, Element } from 'react-scroll';
+import logo from '../assets/images/icon.png'
 
 const NavBarComp = () => {     
   const handlegit=()=>{
@@ -15,7 +16,7 @@ const NavBarComp = () => {
        <Navbar collapseOnSelect expand="lg" className=" navbar-body fixed-top nav-background" >
       <Container>
         <Navbar.Brand href="#home" style={{width:"30%"}} className='logo'>
-        {/* <img src={logo} className='nav-logo' style={{width:"250px"}}/> */}
+        {/* <img src={logo} className='nav-logo' style={{width:"70px"}}/> */}
         Manjima
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
